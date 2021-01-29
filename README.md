@@ -8,7 +8,7 @@ Your project description goes here. What problem did you solve? How did you solv
 
 Additional README details can be found [here](https://github.com/PrimeAcademy/readme-template/blob/master/README.md).
 
-#**\_\_**TODO**\_**#
+#**\_\_**TODO**\_\_**#
 
 Goal: Create an employee salary app
 
@@ -18,3 +18,4 @@ Goal: Create an employee salary app
   - [ ] ID number
   - [ ] Job title
   - [ ] Annual salary
+- [ ] Button to submit form
