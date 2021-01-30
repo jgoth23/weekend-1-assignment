@@ -20,7 +20,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] Employee last name
   - [x] ID number
   - [x] Job title
-  - [ ] Annual salary
+  - [x] Annual salary
 - [ ] Button to submit employee info/monthly costs
 - [ ] Render information to the DOM
   - [ ] Clear input fields
