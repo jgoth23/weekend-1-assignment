@@ -10,7 +10,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 
 #**\_\_**TODO**\_\_**#
 
-Goal: Create an employee salary app
+***Goal: Create an employee salary app***
 
 - [ ] Make in input form
   - [ ] Employee first name
@@ -18,4 +18,12 @@ Goal: Create an employee salary app
   - [ ] ID number
   - [ ] Job title
   - [ ] Annual salary
-- [ ] Button to submit form
+- [ ] Button to submit employee info/monthly costs
+- [ ] Render information to the DOM
+  - [ ] Clear input fields
+- [ ] Calculate monthly costs and render to the DOM
+  - [ ] Monthly costs > $20,000, add a red background color to the total monthly cost 
+
+     ***Delete Button***
+  - [ ] Removes an employee from the DOM
+  - [ ] Does *not* need to remove salary from total

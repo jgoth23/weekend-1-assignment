@@ -3,5 +3,5 @@ console.log('js');
 $(document).ready(readyNow);
 
 function readyNow() {
-  console.log('lesss gooo');
+  console.log('ZZ page');
 }
