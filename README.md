@@ -15,11 +15,11 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - [x] Start by making files and sourcing
 - [x] Put checks in to make sure files are linked
 
-- [ ] Make in input form
-  - [ ] Employee first name
-  - [ ] Employee last name
-  - [ ] ID number
-  - [ ] Job title
+- [ ] Make in input form (HTML)
+  - [x] Employee first name
+  - [x] Employee last name
+  - [x] ID number
+  - [x] Job title
   - [ ] Annual salary
 - [ ] Button to submit employee info/monthly costs
 - [ ] Render information to the DOM
