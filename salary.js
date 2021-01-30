@@ -32,4 +32,7 @@ function onAddEmployee(event) {
     annualSalary: Number(annualSalary),
   };
   console.log('Added an employee', employee);
+  // Push employee into the employee info array
+  employeeInfo.push(employee);
+  console.log('employeeInfo', employeeInfo);
 }
