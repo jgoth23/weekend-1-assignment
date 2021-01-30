@@ -2,6 +2,8 @@ console.log('js');
 
 $(document).ready(readyNow);
 
+const employeeInfo = [];
+
 function readyNow() {
   console.log('JQ');
 
@@ -16,17 +18,18 @@ function readyNow() {
 function onAddEmployee(event) {
   event.preventDefault();
   console.log('onAddEmployee');
-  let firstName = $('#firstNameInput');
-  let lastName = $('#lastNameInput');
-  let employeeID = $('#employeeIDInput');
-  let title = $('#employeeTitleInput');
-  let annualSalary = $('#annualSalaryInput');
-
-  let employeeInfo = {
+  let firstName = $('#firstNameInput').val();
+  let lastName = $('#lastNameInput').val();
+  let employeeID = $('#employeeIDInput').val();
+  let title = $('#employeeTitleInput').val();
+  let annualSalary = $('#annualSalaryInput').val();
+  // Object created of employee information
+  const employee = {
     firstName: firstName,
     lastName: lastName,
     employeeID: employeeID,
     title: title,
     annualSalary: Number(annualSalary),
   };
+  console.log('Added an employee', employee);
 }
