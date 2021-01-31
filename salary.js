@@ -40,13 +40,13 @@ function onAddEmployee(event) {
   for (let employee of employeeInfo) {
     $('#employeeTable').append(`
   <tr>
-          <td>${employee.firstName}</td>
-          <td>${employee.lastName}</td>
-          <td>${employee.employeeID}</td>
-          <td>${employee.title}</td>
-          <td>${employee.annualSalary}</td>
-        </tr>
-        
+    <td>${employee.firstName}</td>
+    <td>${employee.lastName}</td>
+    <td>${employee.employeeID}</td>
+    <td>${employee.title}</td>
+    <td>${employee.annualSalary}</td>
+  </tr>
+  
   `);
   }
 }

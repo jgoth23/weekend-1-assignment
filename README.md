@@ -23,7 +23,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
   - [x] Annual salary
 - [x] Button to submit employee info/monthly costs
   - [x] push to employeeInfo array
-- [ ] Render information to the DOM
+- [x] Render information to the DOM
   - [ ] Clear input fields
 - [ ] Calculate monthly costs and render to the DOM
 
