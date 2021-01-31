@@ -35,4 +35,18 @@ function onAddEmployee(event) {
   // Push employee into the employee info array
   employeeInfo.push(employee);
   console.log('employeeInfo', employeeInfo);
+
+  $('#employeeTable').empty();
+  for (let employee of employeeInfo) {
+    $('#employeeTable').append(`
+  <tr>
+          <td>${employee.firstName}</td>
+          <td>${employee.lastName}</td>
+          <td>${employee.employeeID}</td>
+          <td>${employee.title}</td>
+          <td>${employee.annualSalary}</td>
+        </tr>
+        
+  `);
+  }
 }
