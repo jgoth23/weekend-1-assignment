@@ -6,10 +6,10 @@ const employeeInfo = [];
 
 function readyNow() {
   console.log('JQ');
-
   // Add employee on click
   //Save employee info to array
   $(document).on('click', '#addEmployeeBtn', onAddEmployee);
+  $(document).on('click', '#deleteBtn', onDelete);
 }
 /**This function needs to grab input from the Dom
  * Creat in employee object
@@ -24,6 +24,13 @@ function onAddEmployee(event) {
   let title = $('#employeeTitleInput').val();
   let annualSalary = $('#annualSalaryInput').val();
   // Object created of employee information
+  // Clear inputs
+  $('#firstNameInput').val('');
+  $('#lastNameInput').val('');
+  $('#employeeIDInput').val('');
+  $('#employeeTitleInput').val('');
+  $('#annualSalaryInput').val('');
+
   const employee = {
     firstName: firstName,
     lastName: lastName,
@@ -45,8 +52,14 @@ function onAddEmployee(event) {
     <td>${employee.employeeID}</td>
     <td>${employee.title}</td>
     <td>${employee.annualSalary}</td>
+    <td><button type="button" id="deleteBtn">Delete</button></td>
   </tr>
   
   `);
   }
+}
+
+function onDelete() {
+  $('tr').remove();
+  console.log('insideDelete');
 }

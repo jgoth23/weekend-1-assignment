@@ -24,7 +24,7 @@ Additional README details can be found [here](https://github.com/PrimeAcademy/re
 - [x] Button to submit employee info/monthly costs
   - [x] push to employeeInfo array
 - [x] Render information to the DOM
-  - [ ] Clear input fields
+  - [X] Clear input fields
 - [ ] Calculate monthly costs and render to the DOM
 
   - [ ] Monthly costs > $20,000, add a red background color to the total monthly cost
