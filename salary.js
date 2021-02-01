@@ -52,14 +52,33 @@ function onAddEmployee(event) {
     <td>${employee.employeeID}</td>
     <td>${employee.title}</td>
     <td>${employee.annualSalary}</td>
-    <td><button type="button" id="deleteBtn">Delete</button></td>
+    <td><button type="button" id="deleteBtn" value="${employee.employeeID}">Delete</button></td>
   </tr>
-  
   `);
   }
+  totalSalary();
 }
 
 function onDelete() {
-  $('tr').remove();
+  for (let i = 0; i < employeeInfo.length; i++) {
+    console.log('inside delete', this.value);
+    if (employeeInfo[i].employeeID === this.value) {
+      employeeInfo.splice(i, 1);
+      $(this).closest(`tr`).empty();
+    }
+  }
   console.log('insideDelete');
+}
+let monthlyExpense = 0;
+function totalSalary() {
+  let maxMonthlyBudget = 20000;
+  for (let employee of employeeInfo) {
+    let monthlyWages = employee.annualSalary / 12;
+    monthlyExpense += monthlyWages;
+  }
+  console.log(monthlyExpense);
+  $('#monthlyCosts').append(`<h3>${monthlyExpense}</h3>`);
+  if (monthlyExpense > maxMonthlyBudget) {
+    $('#monthlyCosts').css('background-color', 'red');
+  }
 }
