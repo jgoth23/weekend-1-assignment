@@ -3,6 +3,7 @@ console.log('js');
 $(document).ready(readyNow);
 
 const employeeInfo = [];
+const maxMonthlyBudget = 20000;
 
 function readyNow() {
   console.log('JQ');
@@ -69,9 +70,10 @@ function onDelete() {
   }
   console.log('insideDelete');
 }
-let monthlyExpense = 0;
+//let monthlyExpense = 0;
 function totalSalary() {
-  let maxMonthlyBudget = 20000;
+  //let maxMonthlyBudget = 20000;
+  let monthlyExpense = 0;
   for (let employee of employeeInfo) {
     let monthlyWages = employee.annualSalary / 12;
     monthlyExpense += monthlyWages;
