@@ -38,3 +38,72 @@ tr:nth-child(odd) td {
 caption {
   padding: 10px;
 }
+
+@keyframes blink {
+  0% {
+    background: violet;
+  }
+  15% {
+    background: indigo;
+  }
+
+  30% {
+    background: blue;
+  }
+
+  42% {
+    background: green;
+  }
+
+  58% {
+    background: yellow;
+  }
+
+  70% {
+    background: orange;
+  }
+  85% {
+    background: red;
+  }
+  100% {
+    background: violet;
+  }
+}
+@-webkit-keyframes blink {
+  0% {
+    background: violet;
+  }
+  15% {
+    background: indigo;
+  }
+
+  30% {
+    background: blue;
+  }
+
+  42% {
+    background: green;
+  }
+
+  58% {
+    background: yellow;
+  }
+
+  70% {
+    background: orange;
+  }
+  85% {
+    background: red;
+  }
+  100% {
+    background: violet;
+  }
+}
+
+h1 {
+  height: 100px;
+  width: auto;
+  border: 1px solid black;
+  animation: blink 10s infinite;
+  -webkit-animation: blink 10s infinite;
+}
